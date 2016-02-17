@@ -14,6 +14,11 @@ app = Flask(__name__)
 
 @api.route('/oauth/<userid>', methods=['POST'])
 def oauth_user(userid):
+    """
+    https://docs.synapsepay.com/docs/oauth-resources
+
+    Resource: https://sandbox.synapsepay.com/api/3/oauth/:userid
+    """
     return jsonify(**{
         "expires_at": "1443332477",
         "expires_in": "352259",
@@ -24,6 +29,11 @@ def oauth_user(userid):
 
 @api.route('/users', methods=['GET', 'POST'])
 def users():
+    """
+    https://docs.synapsepay.com/docs/user-resources
+
+    Resource: https://sandbox.synapsepay.com/api/3/users
+    """
     if request.method == 'GET':
         return jsonify(**{
             "error_code": "0",
@@ -96,6 +106,64 @@ def users():
             "photos": [],
             "refresh_token": "vVNAtuCon2bzjiLIAptjaKtgOoGwdYiKQVyiy414"
         })
+
+
+@api.route('/users/<userid>', methods=['GET', 'PATCH'])
+def get_user(userid):
+    """
+    https://sandbox.synapsepay.com/api/3/users/:user_id
+    """
+    return_data = jsonify(**{
+        "_id": "557387ed86c27318532fc09a",
+        "_links": {
+            "self": {
+                "href": "https://sandbox.synapsepay.com/api/3/users/557387ed86c27318532fc09a"
+            }
+        },
+        "client": {
+            "id": 844,
+            "name": "SynapsePay*Sandbox"
+        },
+        "extra": {
+            "date_joined": 1436739787426,
+            "is_business": False,
+            "supp_id": "122eddfgbeafrfvbbb"
+        },
+        "is_hidden": False,
+        "legal_names": [
+            "Test User",
+            "Some new name"
+        ],
+        "logins": [{
+            "email": "test1@synapsepay.com",
+            "read_only": False
+        }],
+        "permission": "SEND-AND-RECEIVE",
+        "phone_numbers": [
+            "901.942.8167"
+        ],
+        "photos": [
+            "https://synapse_django.s3.amazonaws.com/sandbox_attachments/2015/09/02/fcf495a0-3ba1-4947-bdcf-b1df9830d9da.png"
+        ],
+        "refresh_token": "YGpR6tQmkPfkHJeLu8ixKtktDMqS96xs7A2qcuRi"
+    })
+    if request.method == 'GET':
+        print("Requested for user")
+        return return_data
+    elif request.method == 'PATCH':
+        data = request.get_json()
+        if 'doc' in data:
+            if 'attachments' in data['doc']:
+                print("Passed Attachment")
+            elif 'question_set_id' in data['doc']:
+                print("Passed Question set")
+            else:
+                print("Passed Virtual Document")
+        else:
+            print("Update User")
+        return return_data
+    else:
+        return 'Error'
 
 
 app.register_blueprint(api, url_prefix='/api/3')
