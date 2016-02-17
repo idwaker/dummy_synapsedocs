@@ -1,0 +1,89 @@
+{
+  "_id": "5602239586c273087457b5d6",
+  "_links": {
+    "self": {
+      "href": "https://sandbox.synapsepay.com/api/3/users/557387ed86c27318532fc09a/nodes/55d9287486c27365fe3776fb/trans/5602239586c273087457b5d6"
+    }
+  },
+  "amount": {
+    "amount": 1.1,
+    "currency": "USD"
+  },
+  "client": {
+    "id": 844,
+    "name": "SynapsePay*Sandbox"
+  },
+  "extra": {
+    "created_on": 1442980757395,
+    "ip": "192.168.0.1",
+    "latlon": "0,0",
+    "note": "Deposit to bank account",
+    "other": {
+      "attachments": [
+        "https://synapse_django.s3.amazonaws.com/sandbox_attachments/2015/09/23/655d18b3-9715-43b7-b643-c592a75035f0.csv",
+        "https://synapse_django.s3.amazonaws.com/sandbox_attachments/2015/09/23/84d708bc-2cd0-448b-94d3-7566d881fb6e.csv"
+      ]
+    },
+    "process_on": 1443067157395,
+    "supp_id": "1283764wqwsdd34wd13212",
+    "webhook": "http://requestb.in/q94kxtq9"
+  },
+  "fees": [
+    {
+      "fee": 0.1,
+      "note": "Synapse Facilitator Fee",
+      "to": {
+        "id": "559339aa86c273605ccd35df"
+      }
+    },
+    {
+      "fee": 1,
+      "note": "Facilitator Fee",
+      "to": {
+        "id": "55d9287486c27365fe3776fb"
+      }
+    }
+  ],
+  "from": {
+    "id": "55e39ba386c2731d1f97f6da",
+    "nickname": "Savings Account",
+    "type": "ACH-US",
+    "user": {
+      "_id": "557387ed86c27318532fc09a",
+      "legal_names": [
+        "Some new name"
+      ]
+    }
+  },
+  "recent_status": {
+    "date": 1442980768189,
+    "note": " ",
+    "status": "CANCELED",
+    "status_id": "5"
+  },
+  "timeline": [
+    {
+      "date": 1442980757392,
+      "note": "Transaction created",
+      "status": "CREATED",
+      "status_id": "1"
+    },
+    {
+      "date": 1442980768189,
+      "note": " ",
+      "status": "CANCELED",
+      "status_id": "5"
+    }
+  ],
+  "to": {
+    "id": "55d9287486c27365fe3776fb",
+    "nickname": "My Synapse Wallet",
+    "type": "SYNAPSE-US",
+    "user": {
+      "_id": "557387ed86c27318532fc09a",
+      "legal_names": [
+        "Some new name"
+      ]
+    }
+  }
+}

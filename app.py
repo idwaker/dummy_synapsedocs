@@ -62,11 +62,11 @@ def get_user(userid):
             print("Update User")
         return result
     else:
-        return 'Error'
+        raise Exception("Unknown request method")
 
 
 @api.route('/users/<userid>/nodes', methods=['GET', 'POST'])
-def user_nodes():
+def user_nodes(userid):
     """
     https://sandbox.synapsepay.com/api/3/users/:user_id/nodes
     """
@@ -94,6 +94,48 @@ def user_nodes():
             return open(pjoin(RESULT_DIR, 'node-post-ach-mfa.json')).read()
         else:
             raise Exception("Type not defined")
+
+
+@api.route('/users/<userid>/node/<nodeid>', methods=['GET', 'PATCH', 'DELETE'])
+def user_node(userid, nodeid):
+    """
+    https://sandbox.synapsepay.com/api/3/users/:user_id/nodes/:node_id
+    """
+    if request.method == 'GET':
+        return open(pjoin(RESULT_DIR, 'user-node-get.json')).read()
+    elif request.method == 'PATCH':
+        return open(pjoin(RESULT_DIR, 'user-node-patch.json')).read()
+    elif request.method == 'DELETE':
+        return open(pjoin(RESULT_DIR, 'user-node-delete.json')).read()
+    else:
+        raise Exception("Unknown Method")
+
+
+@api.route('/users/<userid>/nodes/<nodeid>/trans', methods=['GET', 'POST'])
+def transaction(userid, nodeid):
+    """
+    https://sandbox.synapsepay.com/api/3/users/:user_id/nodes/:node_id/trans
+    """
+    if request.method == 'GET':
+        return open(pjoin(RESULT_DIR, 'trans-get.json')).read()
+    else:
+        return open(pjoin(RESULT_DIR, 'trans-post.json')).read()
+
+
+@api.route('/users/<userid>/nodes/<nodeid>/trans/<transid>',
+           methods=['GET', 'PATCH', 'DELETE'])
+def user_transaction(userid, nodeid, transid):
+    """
+    https://sandbox.synapsepay.com/api/3/users/:user_id/nodes/:node_id/trans/:trans_id
+    """
+    if request.method == 'GET':
+        return open(pjoin(RESULT_DIR, 'user-trans-get.json')).read()
+    elif request.method == 'PATCH':
+        return open(pjoin(RESULT_DIR, 'user-trans-patch.json')).read()
+    elif request.method == 'DELETE':
+        return open(pjoin(RESULT_DIR, 'user-trans-delete.json')).read()
+    else:
+        raise Exception("Unknown Method")
 
 
 app.register_blueprint(api, url_prefix='/api/3')

@@ -1,0 +1,89 @@
+{
+  "_id": "55f9f6d186c27377b18ff4f1",
+  "_links": {
+    "self": {
+      "href": "https://sandbox.synapsepay.com/api/3/users/557387ed86c27318532fc09a/nodes/55d9287486c27365fe3776fb/trans/55f9f6d186c27377b18ff4f1"
+    }
+  },
+  "amount": {
+    "amount": 1.1,
+    "currency": "USD"
+  },
+  "client": {
+    "id": 844,
+    "name": "SynapsePay*Sandbox"
+  },
+  "extra": {
+    "created_on": 1442445009169,
+    "ip": "192.168.0.1",
+    "latlon": "0,0",
+    "note": "Deposit to bank account",
+    "other": {
+      "attachments": [
+        "https://synapse_django.s3.amazonaws.com/sandbox_attachments/2015/09/16/2a86d031-bd54-4c6e-ab4b-41fc93b6a5bc.csv",
+        "https://synapse_django.s3.amazonaws.com/sandbox_attachments/2015/09/16/26edd373-f6f2-4434-825e-dcce84364561.csv"
+      ]
+    },
+    "process_on": 1442531409169,
+    "supp_id": "1283764wqwsdd34wd13212",
+    "webhook": "http://requestb.in/q94kxtq9"
+  },
+  "fees": [
+    {
+      "fee": 0.1,
+      "note": "Synapse Facilitator Fee",
+      "to": {
+        "id": "559339aa86c273605ccd35df"
+      }
+    },
+    {
+      "fee": 1,
+      "note": "Facilitator Fee",
+      "to": {
+        "id": "55d9287486c27365fe3776fb"
+      }
+    }
+  ],
+  "from": {
+    "id": "55d9287486c27365fe3776fb",
+    "nickname": "My Synapse Wallet",
+    "type": "SYNAPSE-US",
+    "user": {
+      "_id": "557387ed86c27318532fc09a",
+      "legal_names": [
+        "Some new name"
+      ]
+    }
+  },
+  "recent_status": {
+    "date": 1442445801185,
+    "note": " . REPLY: some comment. REPLY: some comment. REPLY: some comment. REPLY: some comment. REPLY: some comment",
+    "status": "CANCELED",
+    "status_id": "5"
+  },
+  "timeline": [
+    {
+      "date": 1442445009159,
+      "note": "Transaction created. REPLY: some comment. REPLY: some comment",
+      "status": "CREATED",
+      "status_id": "1"
+    },
+    {
+      "date": 1442445801185,
+      "note": " . REPLY: some comment. REPLY: some comment. REPLY: some comment. REPLY: some comment. REPLY: some comment",
+      "status": "CANCELED",
+      "status_id": "5"
+    }
+  ],
+  "to": {
+    "id": "55d9287486c27365fe3776fb",
+    "nickname": "My Synapse Wallet",
+    "type": "SYNAPSE-US",
+    "user": {
+      "_id": "557387ed86c27318532fc09a",
+      "legal_names": [
+        "Some new name"
+      ]
+    }
+  }
+}

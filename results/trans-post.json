@@ -1,0 +1,83 @@
+{
+  "_id": "5602234386c273087dc6ab73",
+  "_links": {
+    "self": {
+      "href": "https://sandbox.synapsepay.com/api/3/users/557387ed86c27318532fc09a/nodes/55d9287486c27365fe3776fb/trans/5602234386c273087dc6ab73"
+    }
+  },
+  "amount": {
+    "amount": 1.1,
+    "currency": "USD"
+  },
+  "client": {
+    "id": 844,
+    "name": "SynapsePay*Sandbox"
+  },
+  "extra": {
+    "created_on": 1442980675638,
+    "ip": "192.168.0.1",
+    "latlon": "0,0",
+    "note": "Deposit to bank account",
+    "other": {
+      "attachments": [
+        "https://synapse_django.s3.amazonaws.com/sandbox_attachments/2015/09/23/8c712b2c-5d4c-47db-935b-f975d403495a.csv",
+        "https://synapse_django.s3.amazonaws.com/sandbox_attachments/2015/09/23/046b3599-b2ce-4f26-a446-f89feb2ad9b5.csv"
+      ]
+    },
+    "process_on": 1443067075638,
+    "supp_id": "1283764wqwsdd34wd13212",
+    "webhook": "http://requestb.in/q94kxtq9"
+  },
+  "fees": [
+    {
+      "fee": 0.1,
+      "note": "Synapse Facilitator Fee",
+      "to": {
+        "id": "559339aa86c273605ccd35df"
+      }
+    },
+    {
+      "fee": 1,
+      "note": "Facilitator Fee",
+      "to": {
+        "id": "55d9287486c27365fe3776fb"
+      }
+    }
+  ],
+  "from": {
+    "id": "55d9287486c27365fe3776fb",
+    "nickname": "My Synapse Wallet",
+    "type": "SYNAPSE-US",
+    "user": {
+      "_id": "557387ed86c27318532fc09a",
+      "legal_names": [
+        "Some new name"
+      ]
+    }
+  },
+  "recent_status": {
+    "date": 1442980675634,
+    "note": "Transaction created",
+    "status": "CREATED",
+    "status_id": "1"
+  },
+  "timeline": [
+    {
+      "date": 1442980675634,
+      "note": "Transaction created",
+      "status": "CREATED",
+      "status_id": "1"
+    }
+  ],
+  "to": {
+    "id": "55d9287486c27365fe3776fb",
+    "nickname": "My Synapse Wallet",
+    "type": "SYNAPSE-US",
+    "user": {
+      "_id": "557387ed86c27318532fc09a",
+      "legal_names": [
+        "Some new name"
+      ]
+    }
+  }
+}
