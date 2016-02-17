@@ -1,0 +1,44 @@
+{
+  "error_code": "0",
+  "http_code": "200",
+  "page": 1,
+  "page_count": 1,
+  "success": true,
+  "users": [
+    {
+      "_id": "55aff52586c2732ee1633f90",
+      "_links": {
+        "self": {
+          "href": "https://sandbox.synapsepay.com/api/3/users/55aff52586c2732ee1633f90"
+        }
+      },
+      "client": {
+        "id": 844,
+        "name": "SynapsePay*Sandbox"
+      },
+      "extra": {
+        "date_joined": 1437594917762,
+        "is_business": false,
+        "supp_id": ""
+      },
+      "is_hidden": false,
+      "legal_names": [
+        "Sankaet Pathak"
+      ],
+      "logins": [
+        {
+          "email": "sankaet@synapsepay.com",
+          "read_only": false
+        }
+      ],
+      "permission": "SEND-AND-RECEIVE",
+      "phone_numbers": [
+        "9019428167"
+      ],
+      "photos": [],
+      "refresh_token": "OTv4gQHCJ7l61JgoaE4w98eowOuxHdzWib85IefJ"
+    }
+  ],
+  "users_count": 3
+}
+

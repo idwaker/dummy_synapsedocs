@@ -1,0 +1,36 @@
+{
+  "error_code": "0",
+  "http_code": "200",
+  "nodes": [
+    {
+      "_id": "5577524086c273291dd52810",
+      "_links": {
+        "self": {
+          "href": "https://sandbox.synapsepay.com/api/3/users/557387ed86c27318532fc09a/nodes/5577524086c273291dd52810"
+        }
+      },
+      "allowed": "CREDIT-AND-DEBIT",
+      "extra": {
+        "supp_id": "123sa"
+      },
+      "info": {
+        "account_num": "6789",
+        "balance": {
+          "amount": "not available",
+          "currency": "USD"
+        },
+        "bank_name": "bofa",
+        "class": "CHECKING",
+        "name_on_account": "Test User",
+        "nickname": "LIFEGREEN CHECKING F",
+        "routing_num": "0017",
+        "type": "PERSONAL"
+      },
+      "is_active": true,
+      "type": "ACH-US"
+    }
+  ],
+  "success": true
+}
+
+

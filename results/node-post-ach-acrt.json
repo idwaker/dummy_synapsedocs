@@ -1,0 +1,30 @@
+{
+  "error_code": "0",
+  "http_code": "200",
+  "nodes": [
+    {
+      "_id": "55e39ba386c2731d1f97f6da",
+      "_links": {
+        "self": {
+          "href": "https://sandbox.synapsepay.com/api/3/users/557387ed86c27318532fc09a/nodes/55e39ba386c2731d1f97f6da"
+        }
+      },
+      "allowed": "CREDIT-AND-DEBIT",
+      "extra": {
+        "supp_id": "123sa"
+      },
+      "info": {
+        "account_num": "7444",
+        "class": "CHECKING",
+        "name_on_account": "Sankaet Pathak",
+        "nickname": "Savings Account",
+        "routing_num": "0017",
+        "type": "PERSONAL"
+      },
+      "is_active": true,
+      "type": "ACH-US"
+    }
+  ],
+  "success": true
+}
+

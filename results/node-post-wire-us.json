@@ -1,0 +1,34 @@
+{
+  "error_code": "0",
+  "http_code": "200",
+  "nodes": [
+    {
+      "_id": "55ff61fa86c27358ddb53fde",
+      "_links": {
+        "self": {
+          "href": "https://sandbox.synapsepay.com/api/3/users/557387ed86c27318532fc09a/nodes/55ff61fa86c27358ddb53fde"
+        }
+      },
+      "allowed": "CREDIT-AND-DEBIT",
+      "extra": {
+        "supp_id": "123sa"
+      },
+      "info": {
+        "account_num": "7443",
+        "address": "452 Fifth Ave, NY",
+        "bank_name": "Bank of America",
+        "correspondent_info": {
+          "address": "452 Fifth Ave, NY",
+          "bank_name": "Bank of America",
+          "routing_num": "026009593"
+        },
+        "name_on_account": "Some Name",
+        "nickname": "Some Account",
+        "routing_num": "9593"
+      },
+      "is_active": true,
+      "type": "WIRE-US"
+    }
+  ],
+  "success": true
+}

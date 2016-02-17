@@ -1,0 +1,33 @@
+{
+  "_id": "5602221886c2730550cc3716",
+  "_links": {
+    "self": {
+      "href": "https://sandbox.synapsepay.com/api/3/users/5602221886c2730550cc3716"
+    }
+  },
+  "client": {
+    "id": 844,
+    "name": "SynapsePay*Sandbox"
+  },
+  "extra": {
+    "date_joined": 1442980376688,
+    "is_business": false,
+    "supp_id": "122eddfgbeafrfvbbb"
+  },
+  "is_hidden": false,
+  "legal_names": [
+    "Test User"
+  ],
+  "logins": [
+    {
+      "email": "test1@synapsepay.com",
+      "read_only": false
+    }
+  ],
+  "permission": "UNVERIFIED",
+  "phone_numbers": [
+    "901.111.1111"
+  ],
+  "photos": [],
+  "refresh_token": "vVNAtuCon2bzjiLIAptjaKtgOoGwdYiKQVyiy414"
+}
